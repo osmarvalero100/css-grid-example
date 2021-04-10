@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(10, 1fr);
+}
+.container header,
+.container footer {
+    background: yellow;
+    grid-column: 1/11;
+}
+.container main {
+    background-color: #f4f4f4;
+    grid-column: 1/7;
+}
+.container aside {
+    grid-column: 7/11;
+}
+
+/**Menú*/
+.container header {
+    padding: 20px;
+}
+.container header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.container header ul li a {
+    text-decoration: none;
+}
