@@ -34,3 +34,10 @@
 .container header ul li a {
     text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+    .container main,
+    .container aside {
+        grid-column: 1/11;
+    }
+}
